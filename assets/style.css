@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.flex{
+  display: flex;
+}
+
+/* 
+Jumbotron
+*/
+
+.jumbotron{
+  height: 100vh;
+  background-color: #8569c0;
+  color: white;
+}
+
+.text-jumbotron{
+  width: 1200px;
+  padding: 200px 40px;
+}
+
+.text-jumbotron h1{
+  font-size: 3em;
+}
+
+.text-jumbotron input{
+  font-size: 1em;
+  padding: 0 30px;
+  outline: none;
+  width: 40vw;
+  height: 40px;
+  border: none;
+  border-radius: 30px 0 0 30px;
+}
+
+.text-jumbotron button{
+  background-color: rgb(139, 219, 139);
+  color: white;
+  font-weight: bold;
+  border-radius: 0 30px 30px 0;
+  font-size: 1em;
+  width: 70px;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.text-jumbotron button:hover{
+  background-color: rgb(118, 184, 118);
+  transition: ease-in 0.2s;
+}
+
+.text-jumbotron button:active{
+  background-color: rgb(96, 148, 96);
+}
+
+.text-jumbotron .popular{
+  margin: 20px 0;
+}
+
+.text-jumbotron h5, .text-jumbotron ul{
+  padding: 0;
+  margin: 0;
+}
+
+.text-jumbotron ul{
+  list-style-type: none;
+}
+
+.text-jumbotron a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 0 5px;
+}
+
+.text-jumbotron a:hover{
+  color: #8569c0;
+  background-color: white;
+  transition: ease-in 0.2s;
+}
+
+.img-jumbotron{
+  width: 50vmax;
+  background-image: url("img/logo.svg");
+  background-size: cover;
+}
+
+/* 
+Navigation
+*/
+
+@media screen and (max-width: 1055px){
+  .text-jumbotron .popular{
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .text-jumbotron{
+    text-align: center;
+    width: 100%;
+  }
+  .text-jumbotron h1{
+    font-size: 2em;
+  }
+  .img-jumbotron{
+    width: 0;
+  }
+  .text-jumbotron .popular{
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .text-jumbotron{
+    text-align: center;
+    width: 100%;
+  }
+  .text-jumbotron h1{
+    font-size: 2em;
+  }
+  .img-jumbotron{
+    width: 0;
+  }
+}
