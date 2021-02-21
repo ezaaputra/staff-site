@@ -102,6 +102,62 @@ Jumbotron
 Navigation
 */
 
+#navbar{
+  background-color: white;
+  height: 50px;
+  padding: 1px 0;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav ul a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+nav ul a:hover{
+  border-radius: 20px;
+  background-color: rgb(243, 243, 243);
+  transition: ease-in 0.2s;
+}
+
+nav ul a:active{
+  background-color: rgb(219, 219, 219);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 20px 20px;
+}
+
+.nav-mobile{
+  text-decoration: none;
+  float: right;
+  visibility: hidden;
+  padding: 10px 15px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.nav-mobile:hover{
+  border-radius: 20px;
+  background-color: rgb(243, 243, 243);
+  transition: ease-in 0.2s;
+}
+
+.nav-mobile:active{
+  background-color: rgb(219, 219, 219);
+}
+
 @media screen and (max-width: 1055px){
   .text-jumbotron .popular{
     visibility: hidden;
@@ -121,6 +177,13 @@ Navigation
   }
   .text-jumbotron .popular{
     visibility: hidden;
+  }
+  nav ul{
+    height: 0;
+    overflow: hidden;
+  }
+  .nav-mobile{
+    visibility: visible;
   }
 }
 
