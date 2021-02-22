@@ -16,7 +16,7 @@ Jumbotron
 */
 
 .jumbotron{
-  height: 100vh;
+  height: 100%;
   background-color: #8569c0;
   color: white;
 }
@@ -94,7 +94,7 @@ Jumbotron
 
 .img-jumbotron{
   width: 50vmax;
-  background-image: url("img/logo.svg");
+  background-image: url("img/jumbotron.svg");
   background-size: cover;
 }
 
@@ -110,6 +110,9 @@ Navigation
 
 nav ul{
   list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
 }
 
 nav ul a{
@@ -123,12 +126,12 @@ nav ul a{
 
 nav ul a:hover{
   border-radius: 20px;
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(236, 236, 236);
   transition: ease-in 0.2s;
 }
 
 nav ul a:active{
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(209, 209, 209);
 }
 
 .sticky {
@@ -139,13 +142,18 @@ nav ul a:active{
   border-radius: 0 0 20px 20px;
 }
 
+.sticky-content{
+  padding-top: 50px;
+}
+
 .nav-mobile{
   text-decoration: none;
-  float: right;
-  visibility: hidden;
+  float: left;
   padding: 10px 15px;
   font-weight: bold;
   margin: 5px;
+  position: absolute;
+  left: -999999px;
 }
 
 .nav-mobile:hover{
@@ -158,9 +166,18 @@ nav ul a:active{
   background-color: rgb(219, 219, 219);
 }
 
+/* 
+content
+*/
+
+#content{
+
+}
+
 @media screen and (max-width: 1055px){
   .text-jumbotron .popular{
-    visibility: hidden;
+    position: absolute;
+    left: -999999px;
   }
 }
 
@@ -173,21 +190,20 @@ nav ul a:active{
     font-size: 2em;
   }
   .img-jumbotron{
-    width: 0;
-  }
-  .text-jumbotron .popular{
-    visibility: hidden;
+    position: absolute;
+    left: -999999px;
   }
   nav ul{
     height: 0;
-    overflow: hidden;
+    position: absolute;
+    left: -999999px;
   }
   .nav-mobile{
-    visibility: visible;
+    position: static;
   }
 }
 
-@media screen and (max-width: 350px){
+/* @media screen and (max-width: 350px){
   .text-jumbotron{
     text-align: center;
     width: 100%;
@@ -198,4 +214,4 @@ nav ul a:active{
   .img-jumbotron{
     width: 0;
   }
-}
+} */
