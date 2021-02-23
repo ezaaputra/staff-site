@@ -28,18 +28,26 @@
     </div>
     <nav id="navbar">
       <ul>
-        <li><a href="#">Machine Learning</a></li>
-        <li><a href="#">Cloud Computing</a></li>
-        <li><a href="#">Mobile Development</a></li>
-        <li><a href="#">Augmented Reality</a></li>
+        <li><a href="#intro-wrapper">Intro</a></li>
+        <li><a href="#kategori">Kategori</a></li>
+        <li><a href="#card-wrapper">Tentang Kami</a></li>
+        <li><a href="#biodata">Biodata</a></li>
       </ul>
-      <a class="nav-mobile" href="#">=</a>
+      <div class="dropdown">
+        <button onclick="dropdownFunction()" class="dropbtn">=</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#intro-wrapper">Intro</a>
+          <a href="#kategori">Kategori</a>
+          <a href="#card-wrapper">Tentang Kami</a>
+          <a href="#biodata">Biodata</a>
+        </div>
+      </div>
     </nav>
   </header>
   <main>
     <div id="content">
       <!-- intro -->
-      <article>
+      <article id="intro-wrapper">
         <div class="intro">
           <picture>
             <img src="assets/img/intro/info01.svg" alt="info">
@@ -74,7 +82,11 @@
       </article>
 
       <!-- category -->
-      <article>
+      <article id="kategori">
+        <div class="section-title">
+          Kategori
+          <div class="line"></div>
+        </div>
         <div class="category">
           <div class="category-item">
             <picture>
@@ -104,23 +116,57 @@
       </article>
 
       <!-- tentang kami -->
-      <article>
-        
-      </article>
-
-      <!-- biodata -->
-      <article>
-        
+      <article id="card-wrapper">
+        <div class="section-title">
+          Tentang Kami
+          <div class="line"></div>
+        </div>
+        <div class="card">
+          <picture>
+            <img src="assets/img/logo.svg" alt="">
+          </picture>
+          <div class="role">Data Science</div>
+          <h4>Eza Ananda Putra</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla rem voluptas necessitatibus sunt deserunt! Pariatur, aliquid vero ullam excepturi rem laboriosam sed aperiam sit. Possimus in aperiam magnam laudantium explicabo?</p>
+        </div>
+        <div class="card">
+          <picture>
+            <img src="assets/img/logo.svg" alt="">
+          </picture>
+          <div class="role">Data Science</div>
+          <h4>Eza Ananda Putra</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla rem voluptas necessitatibus sunt deserunt! Pariatur, aliquid vero ullam excepturi rem laboriosam sed aperiam sit. Possimus in aperiam magnam laudantium explicabo?</p>
+        </div>
+        <div class="card">
+          <picture>
+            <img src="assets/img/logo.svg" alt="">
+          </picture>
+          <div class="role">Data Science</div>
+          <h4>Eza Ananda Putra</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla rem voluptas necessitatibus sunt deserunt! Pariatur, aliquid vero ullam excepturi rem laboriosam sed aperiam sit. Possimus in aperiam magnam laudantium explicabo?</p>
+        </div>
       </article>
     </div>
-    <aside>
-      
+
+    <aside id="biodata">
+      <div class="section-title">
+        Biodata
+        <div class="line"></div>
+      </div>
+      <div class="biodata">
+        <div class="pic">
+          <img src="assets/img/putu.png" alt="foto">
+        </div>
+        <h4>Eza Ananda Putra</h4>
+        <p>eza.a.putra@gmail.com</p>
+      </div>
     </aside>
   </main>
   <footer>
-
+    <p>&copy; 2021</p>
   </footer>
 
   <script src="assets/sticky.js"></script>
+  <script src="assets/dropdown.js"></script>
 </body>
 </html>
